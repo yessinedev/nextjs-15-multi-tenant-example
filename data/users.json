@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "subdomain": "yessine",
+      "name": "Yessine agrebi",
+      "todos": [
+        {
+          "id": 1,
+          "text": "Create multi tenant app",
+          "completed": true
+        },
+        {
+          "id": 2,
+          "text": "Learn Next.js 15",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "subdomain": "rami",
+      "name": "Rami chabchoub",
+      "todos": [
+        {
+          "id": 1,
+          "text": "Create portfolio",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "subdomain": "sfax",
+      "name": "tunis sfax",
+      "todos": []
+    }
+  ]
+}
