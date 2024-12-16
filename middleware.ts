@@ -1,9 +1,12 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { updateSession } from "./utils/supabase/middleware";
 
-export function middleware(request: NextRequest) {
+export async function middleware(request: NextRequest) {
   const hostname = request.headers.get('host') || '';
   const subdomain = hostname.split('.')[0];
+
+  await updateSession(request);
   
   if (request.nextUrl.pathname.startsWith('/_next') || 
       request.nextUrl.pathname.startsWith('/api')) {
